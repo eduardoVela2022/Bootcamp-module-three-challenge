@@ -173,7 +173,3 @@ function getNumber(message) {
 function getRandomNumber(maxValue) {
   return Math.floor(Math.random() * maxValue);
 }
-
-// https://www.w3schools.com/js/js_popup.asp
-// https://www.w3schools.com/jsref/jsref_isnan_number.asp#:~:text=isNaN()%20returns%20true%20if,a%20number%20before%20testing%20it.
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
