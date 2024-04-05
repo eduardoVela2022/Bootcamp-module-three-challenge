@@ -40,12 +40,30 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
+  // Stores the average salary of all the employees
+  let averageSalary = 0;
+
+  // First sums all the salaries into the variable
+  for (const employee of employeesArray) {
+    averageSalary += employee.salary;
+  }
+
+  // Then it divides them by the total number of employees
+  averageSalary = averageSalary / employeesArray.length;
+
+  // Logs into the console the result
+  console.log(`The average salary of the employees is: $${averageSalary}`);
 };
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
-  // TODO: Select and display a random employee
+  // Gets a random number from the range of 0 to the length of the employees array
+  const randomNumber = getRandomNumber(employeesArray.length);
+
+  // Logs to the console the randomly selected employee
+  console.log(
+    `Today’s randomly selected employee is: ${employeesArray[randomNumber].firstName} ${employeesArray[randomNumber].lastName}`
+  );
 };
 
 /*
@@ -148,8 +166,14 @@ function getNumber(message) {
   }
 
   // If number is a number return it
-  return number;
+  return +number;
+}
+
+// Returns a value from the range of 0 to maxValue - 1.
+function getRandomNumber(maxValue) {
+  return Math.floor(Math.random() * maxValue);
 }
 
 // https://www.w3schools.com/js/js_popup.asp
 // https://www.w3schools.com/jsref/jsref_isnan_number.asp#:~:text=isNaN()%20returns%20true%20if,a%20number%20before%20testing%20it.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
