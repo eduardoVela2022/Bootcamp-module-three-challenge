@@ -40,7 +40,19 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
+  // Stores the average salary of all the employees
+  let averageSalary = 0;
+
+  // First sums all the salaries into the variable
+  for (const employee of employeesArray) {
+    averageSalary += employee.salary;
+  }
+
+  // Then it divides them by the total number of employees
+  averageSalary = averageSalary / employeesArray.length;
+
+  // Logs into the console the result
+  console.log(`The average salary of the employees is: $${averageSalary}`);
 };
 
 // Select a random employee
@@ -148,7 +160,7 @@ function getNumber(message) {
   }
 
   // If number is a number return it
-  return number;
+  return +number;
 }
 
 // https://www.w3schools.com/js/js_popup.asp
