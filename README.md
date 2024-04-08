@@ -2,9 +2,9 @@
 
 ## Description
 
-In this project I used JavaScript to make a given website interactive and perform its duties. The starter code that a was given contained all the HTML and CSS elements the site needs for its structure and style, but the JavaScript file did not had all of its functions implemented yet. So I implemented the remaining functions to make the site work as planned.
+In this project I used JavaScript to make a given website interactive, so it can perform its duties. The starter code that was given contained all the HTML and CSS elements the site needed for its structure and style, but the JavaScript file did not had all of its functions implemented yet. So I implemented the remaining functions, to make the site work as planned.
 
-This project was interesting, because I had to analyze the Javascript code that another developer made. The good thing was that the code had helpful comments on it, so it was relatively easy to understand. This showed me the importance of comments in code, since it helps fellow developers comprehend someone’s work.
+This project was interesting, because I had to analyze the Javascript code that another developer made. The good thing was that the code had helpful comments on it, so it was relatively easy to understand. This showed me the importance of adding comments in code, since it helps fellow developers comprehend someone’s work.
 
 ## Installation
 
@@ -24,7 +24,7 @@ No installation is required, you can click the following link to access the site
 - After you enter the employee’s last name, another popup will tell you to enter the salary of said employee.
   ![Salary popup box](images/salaryPopupBox.png)
 
-- Once you enter the employee’s salary, another popup box will ask you if you want to add another employee. If you click on the “OK” button, the website will ask you for the first name, last name and salary of another employee, but if you click on the “Cancel” button the website will show you all of the employees you have entered thus far in a table, ordered alphabetically by their last name.
+- But that is not all, if you open the developer tools in your Chrome Browser, by right clicking on the webpage and choosing the inspect function of the menu, and go to the console section of the developer tools, you will see that the website computed the average salary of all the employees, and that it selected a random employee. You can also see the order in which the employees were added to the website, by clicking on the array object present on the console.
   ![Add another employee popup box](images/addAnotherEmployeePopupBox.png)
 
 - Here is an example of a table comprised of four employees:
